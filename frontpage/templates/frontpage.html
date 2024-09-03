@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+      <!-- Font Awesome Link -->
+      <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+      <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+      <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
+    </head>
+
+    
+    <body class="column d-flex justify-content-start">
+
+      <!-- Side Navigation Menu -->
+      <div class="sidebar row bg-dark align-items-center text-white" style="position: fixed;display: flex; width:250px;height: 100vh; flex-direction:column;">
+        <!-- Display Picture -->
+        <div class="text-white" style="height:100vh;">
+          
+          <div class="d-flex justify-content-center pt-2 pb-2">
+            <img src="{% static 'Profile.jpg' %}" alt="profilepic" style="width: 180px ;height: 180px ;border: 4px solid; border-color: rgba(0, 140, 255, 0.332); border-radius: 50%"/>
+          </div>
+          
+          <div class="d-flex justify-content-center pt-3 pb-3">
+            <h5>Angelo Villanueva</h5>
+          </div>
+
+          <!-- LINKS FOR SOCIALS -->
+          <div class="column d-flex justify-content-center pt-3 pb-3 align-items-center " style="gap: 25px;">
+
+            <div class="d-flex justify-content-center align-items-center" style="background-color:rgba(255, 255, 255, .3);height: 40px; width: 40px; border-radius: 60%;opacity: 100;">
+              <a href="//github.com/Brightens" style=" text-decoration: none;">
+                <i class="fa fa-github" aria-hidden="true" style="color: white;"></i>
+              </a></div>
+            <div class="d-flex justify-content-center align-items-center" style="background-color:rgba(255, 255, 255, .3);height: 40px; width: 40px; border-radius: 60%;">
+              <a href="https://www.linkedin.com/in/villanueva-angelo/" style="text-decoration: none;">  
+                <i class="fa fa-linkedin" aria-hidden="true" style="color: white;"></i>
+              </a></div> 
+            <div class="d-flex justify-content-center align-items-center" style="background-color:rgba(255, 255, 255, .3);height: 40px; width: 40px; border-radius: 60%;">
+              <a href="https://www.facebook.com/angeloagapitovillanueva" style="text-decoration: none;">
+                <i class="fa fa-facebook" aria-hidden="true" style="color: white;"></i>
+              </a></div>
+
+          </div>
+          <!-- END LINKS FOR SOCIALS -->
+          <!-- Links for Website Directory Section -->
+          <div class="row d-flex justify-content-center">
+            <div class="column d-flex justify-content-center pt-3 pb-3">
+              <a href="#about-page" class="column d-flex justify-content-between text-white" style="text-decoration: none;">
+                <span class="px-2">
+                  <i class="fa fa-user" aria-hidden="true" style="color: white;"></i>
+                </span>About
+              </a>
+            </div>
+            <div class="column d-flex justify-content-center pt-3 pb-3">
+              <a href="#resume-page" class="column d-flex justify-content-between text-white" style="text-decoration: none;">
+                <span class="px-2">
+                  <i class="fa fa-file-text" aria-hidden="true" style="color: white;"></i>
+                </span>Resume
+              </a>  
+            </div>
+            <div class="column d-flex justify-content-center pt-3 pb-3">
+              <a href="#portfolio-page" class="column d-flex justify-content-between text-white" style="text-decoration: none;">
+                <span class="px-2">
+                  <i class="fa fa-folder-open" aria-hidden="true" style="color: white;"></i>
+                </span>Portfolio 
+              </a>
+            </div>
+          </div>
+          <!-- End of Links for Website Directory Section -->
+        </div>
+      </div>
+      <!-- End of Side Navigation Menu -->
+
+
+      <div class="main-content px-2" style="margin-left: 238px;">
+      <!-- About Section -->
+      <section id="about-page" class="column d-flex justify-content-start">
+        <div class="row d-flex justify-content-start">
+
+          <h2 class="row d-flex justify-content-center">About</h2>
+
+          <div class="row px-4">
+            <h4 class="px-2">Personal Information</h4>
+              <div class="column d-flex justify-content-start" style="gap: 300px;">
+                <div class="row d-flex justify-content-start"> 
+                  <ul style="list-style-type: none;">
+                    <li><i class="fa fa-chevron-right pt-2 pb-2" aria-hidden="true"></i> <strong>Phone:</strong><span> +63 9771139201</span></li>
+                    <li><i class="fa fa-chevron-right pt-2 pb-2" aria-hidden="true"></i> <strong>Email:</strong><span> angeloagapitovillanueva@gmail.com</span></li>
+                    <li><i class="fa fa-chevron-right pt-2 pb-2" aria-hidden="true"></i> <strong>City:</strong><span> Bocaue, Bulacan</span></li>
+                  </ul>
+                </div>  
+                <div class="row d-flex justify-content-start">
+                  <ul style="list-style-type: none;">
+                    <li><i class="fa fa-chevron-right pt-2 pb-2" aria-hidden="true"></i> <strong>Age:</strong><span> 25</span></li>
+                    <li><i class="fa fa-chevron-right pt-2 pb-2" aria-hidden="true"></i> <strong>Birthday:</strong><span> 11/26/1998</span></li>
+                    <li><i class="fa fa-chevron-right pt-2 pb-2" aria-hidden="true"></i> <strong>Degree:</strong><span> Bachelor of Science in Information Technology</span></li>
+                  </ul>
+                </div>
+              </div>
+                <strong>Career Objectives</strong>
+                <p style="text-indent: 3%;">To upscale my skills as a Junior Python developer by using my Python programming more efficiently and inventively,
+                   while growing my expertise in software development, API integration, and database management to build high-quality, maintainable code. 
+                   Additionally, I aim to share my knowledge and mentor fellow developers, whether they are career shifters,
+                    entry-level, or senior-level professionals.</p>
+          </div>
+        </div>
+      </section>
+      <!-- End of About Section -->
+
+      <!-- Resume Section -->
+      <section id="resume-page">
+
+        <h2 class="d-flex justify-content-center">Resume</h2>
+        
+
+        <div class="column d-flex justify-content-start pt-5">
+
+          <div class="justify-content-center px-1" style="width: 50%;">
+            <h4 class="px-1">Professional Experience</h4>
+
+            <!-- Experience Item-->
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 10px; ">
+              <strong class="px-2">JUNIOR PYTHON DEVELOPER (Galinduh Co.)</strong>
+              <p class="px-3"><b> March 2024 - Current </b></p>
+              <ul>  
+                <li><span>Writing and Testing Code: Develop Python scripts and applications using the Django framework, and write JavaScript for front-end functionality.</span></li>
+                <li><span>Debugging and Troubleshooting: Identify and fix bugs, documenting changes clearly.</span></li>
+                <li><span>API Development and Integration: Create and integrate well-documented, maintainable APIs.</span></li>
+                <li><span>Following Coding Standards: Adhere to best practices for code readability and maintainability.</span></li>
+                <li><span>Version Control: Use Git for managing code changes and collaboration.</span></li>
+                <li><span>Database Management: Utilize ORM for efficient database operations and data integrity.</span></li>
+              </ul>
+            </div>
+            <!-- End of Experience Item-->
+
+            <!-- Experience Item-->
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 10px; ">
+              <strong class="px-2">REPORTS ANALYST (Peak Support)</strong>
+              <p class="px-3"><b> February 2021 - March 2024</b></p>
+              <ul>  
+                <li><span>Report Management: Build, publish, and ensure the accuracy of reports using Microsoft Excel (formulas, functions, Pivot Tables, Power Query)</span></li>
+                <li><span>Data Analysis: Analyze data and provide daily updates to stakeholders using data visualizations, such as charts and graphs.</span></li>
+                <li><span>SharePoint Administration: Develop and maintain SharePoint sites using SharePoint for creating and managing online resources and collaboration tools.</span></li>
+                <li><span>Training Facilitation: Conduct training sessions using Microsoft Excel for practical exercises and data demonstrations.</span></li>
+                <li><span>Business Reviews: Creating Powerpoint presentation for Client calls and presenting Data </span></li>
+                <li><span>Documentation: Create and maintain process documentation using Microsoft Word for detailed descriptions and procedures.</span></li>
+              </ul>
+            </div>
+            <!-- End of Experience Item-->
+
+            <!-- Experience Item-->
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 10px;">
+              <strong class="px-2">TRANSACTION PROCESSING ASSOCIATE (Accenture Inc.)</strong>
+              <p class="px-3"><b> March 2021 - August 2020</b></p>
+                <ul>  
+                  <li><span>Billing Investigation: Investigate discrepancies in customer billing and invoices.</span></li>
+                  <li><span>Bill Calculation: Compute accurate electric bills for customers and ensure result accuracy.</span></li>
+                  <li><span>Billing Adjustment: Adjust bills when electric readings do not align with previous consumption.</span></li>
+                  <li><span>Case Management: Determine the approach for handling each account or case.</span></li>
+                  <li><span>Meter Quality Check: Verify the proper functioning and correct installation of electric and gas meters at residences.</span></li>
+                </ul>
+            </div>
+
+          </div>
+
+          <div class="row d-flex justify-content-start" style="width: 50%;">
+
+            <h4>Education</h4>
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 20px;">
+              <strong class="px-2">INFORMATION TECHNOLOGY</strong>
+              <p class="px-3">Bulacan Sate University 2015 - 2019</p>
+            </div>
+
+            <h4>Trainings and Seminars</h4>
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 20px;">
+              <strong class="px-2">Data Visualization Training (November 2023)</strong>
+              <p class="px-3">Covers the techniques on representing gathered data into graphs using specific tools and application for 
+                it to be more understandable to the stakeholders, this caters concepts like chart selection, design principles, 
+                and software usage to effectively communicate insights and trends.</p>
+            </div>
+
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 20px;">
+              <strong class="px-2">Business Analyst Training Class Introduction (November 2023)</strong>
+              <p class="px-3">This training covers essential skills such as requirements gathering, data analysis, and process modeling
+                 to drive business improvements and successful project outcomes. Also covers the role of the analyst to bridge the gap between
+                  the IT teams' output and data to the stakeholders.</p>
+            </div>
+
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 20px;">
+              <strong class="px-2">Power Query Data Transformation Training (August 2023)</strong>
+              <p class="px-3">Focus in leveraging the capability of Microsoft Excel and Power BI to clean, reshape and transform raw data using Power Query.
+                 The training covers techniques for merging datasets, filtering, and applying advanced data manipulation to prepare data for analysis 
+                 and reporting.</p>
+            </div>
+
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 20px;">
+              <strong class="px-2">Peak Support Reports Analyst Training (February 2021 to March 2021)</strong>
+              <p class="px-3">New hire bootcamp that enables the resource to familiarize themselves to the ins and outs of the company/projects.</p>
+            </div>
+
+            <div style="border-left: solid  rgb(37, 150, 190); margin: 0px 0px 20px 20px;">
+              <strong class="px-2">Accenture Data Entry Training (January 2020 to February 2020)</strong>
+              <p class="px-3">New hire bootcamp that enables the resource to be familiar to the process and software to be used in the project.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section" id="portfolio-page" style="display:flex; flex-direction:column;">
+        <h2 class="d-flex justify-content-center">Portfolio</h2>
+
+        <div class="row d-flex justify-content-start pt-3 px-3">
+
+          <div class="column d-flex justify-content-start pt-2 pb-2">
+            <div class="row d-flex justify-content-start align-items-center" style="width: 50%">
+              <span>
+              <strong>Time-In & Out:</strong>
+              <p class="row d-flex justify-content-center align-items-center px-3" style="text-indent: 5%;">For employees working for Galinduh Co., 
+                choosing their assigned task for the day. Once the employee has already time-in/out they cannot time-in again (requested specifically
+                 by the owner of Galinduh Co.)</p></span>
+            </div>
+            <div class="row justify-content-center align-items-center" style="width: 50%">
+              <img src="{% static 'Attendance GalinduhCo.png' %}" style="width: 500px;height: 300px;border-radius: 20%;"/>
+            </div>
+          </div>
+
+          <div class="column d-flex justify-content-start pt-2 pb-2">
+            <div class="row d-flex justify-content-center align-items-center" style="width: 50%">
+              <span>
+                <strong>Generate Report:</strong>
+                <p class="row d-flex justify-content-center align-items-center px-3" style="text-indent: 5%;"> Owner can either drag and drop or attach
+                   a CSV file. Once the file is uploaded, the system automatically processes the raw data in the CSV and transforms it into a well-organized,
+                    structured report, includes summaries, visualizations.</p></span>
+            </div>
+            <div class="row justify-content-center align-items-center" style="width: 50%">
+              <img src="{% static 'Generate Report GalinduhCo.png' %}" style="width: 600px;height: 180px;border-radius: 05%;"/>
+            </div>
+            
+          </div>
+
+          <div class="column d-flex justify-content-start pt-2 pb-2">
+            <div class="row d-flex justify-content-center align-items-center" style="width: 50%">
+              <span>
+                <strong>Top products:</strong>
+                <p class="row d-flex justify-content-center align-items-center px-3" style="text-indent: 5%;"> Owner can see the top 50 most selling Top-Items
+                  based on quantities that was sold, on every page of the content displays 10 items which includes the ranking, product name, quantity sold,
+                   Estimated profit, Average Profit for whole product </p></span>
+            </div>
+            <div class="row justify-content-center align-items-center" style="width: 50%">
+              <img src="{% static 'Top-Items GalinduhCo.png' %}" style="width: 300px;height: 400px;border-radius: 5%;"/>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      </div>
+      <!-- End of Resume Section -->
+    </body>
+  </html>
