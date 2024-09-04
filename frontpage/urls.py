@@ -7,7 +7,7 @@ app_name = 'frontpage'
 
 urlpatterns = [
     path(
-        route='frontpage',
+        route='',
         view=FrontPage.as_view(),
         name='frontpage'
     )
